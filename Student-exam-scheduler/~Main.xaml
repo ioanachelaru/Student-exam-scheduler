@@ -81,13 +81,13 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="414.4,781.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="Student.xlsx">
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="414.4,449.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="Student.xlsx">
           <ui:ExcelApplicationScope.Body>
             <ActivityAction x:TypeArguments="ui:WorkbookApplication">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="359.2,672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336.8,340" sap2010:WorkflowViewState.IdRef="Sequence_1">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="sd:DataTable" Name="DT1" />
                   <Variable x:TypeArguments="x:String" Name="DTout" />
@@ -97,18 +97,20 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ExcelReadRange AddHeaders="True" DataTable="[DT1]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="336.8,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" Range="A2:E2" SheetName="Sheet1" />
-                <ui:OutputDataTable DataTable="[DT1]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="336.8,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[DTout]" />
-                <Sequence DisplayName="Assign value to student variables" sap:VirtualizedContainerService.HintSize="336.8,384.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <ui:ExcelReadRange AddHeaders="True" DataTable="[DT1]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" Range="A2:E2" SheetName="Sheet1" />
+                <ui:OutputDataTable DataTable="[DT1]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="314.4,22.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[DTout]" />
+                <Sequence DisplayName="Assign value to student variables" sap:VirtualizedContainerService.HintSize="314.4,52.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="s:String[]" Name="Data" />
+                    <Variable x:TypeArguments="x:String" Name="DocName" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign sap:VirtualizedContainerService.HintSize="243.2,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="s:String[]">[Data]</OutArgument>
                     </Assign.To>
@@ -116,7 +118,7 @@
                       <InArgument x:TypeArguments="s:String[]">[DTout.Split(","c)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign DisplayName="Assign student name" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign DisplayName="Assign student name" sap:VirtualizedContainerService.HintSize="243.2,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[StudentName]</OutArgument>
                     </Assign.To>
@@ -124,7 +126,38 @@
                       <InArgument x:TypeArguments="x:String">[Data(0)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[StudentName]" TopMost="True" />
+                  <Assign sap:VirtualizedContainerService.HintSize="243.2,60">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[StudentEmail]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Data(1)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="243.2,60">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[StudentGrupa]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Data(2)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="243.2,60">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[StudentAnStudiu]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Data(3)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="243.2,60">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[StudentSectie]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Data(4)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
                 </Sequence>
               </Sequence>
             </ActivityAction>
