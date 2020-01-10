@@ -114,6 +114,15 @@
         "C:\\Users\\ioana\\.nuget\\packages\\uipath.word.activities/1.3.4\\lib/net452/UiPath.Word.Activities.dll",
         "C:\\Users\\ioana\\.nuget\\packages\\uipath.word.activities/1.3.4\\lib/net452/UiPath.Word.dll"
       ]
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Office.Interop.Word",
+        "Version": "15.0.4797.1003"
+      },
+      "Assemblies": [
+        "C:\\Users\\ioana\\.nuget\\packages\\microsoft.office.interop.word/15.0.4797.1003\\lib/net20/Microsoft.Office.Interop.Word.dll"
+      ]
     }
   ],
   "Conflicts": [],
@@ -181,6 +190,11 @@
     "Microsoft.Exchange.WebServices": {
       "Id": "Microsoft.Exchange.WebServices",
       "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.Office.Interop.Word": {
+      "Id": "Microsoft.Office.Interop.Word",
+      "Version": "15.0.4797.1003",
       "Dependencies": []
     },
     "Microsoft.Rest.ClientRuntime": {
