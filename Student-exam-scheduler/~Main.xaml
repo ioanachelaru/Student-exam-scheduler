@@ -172,10 +172,10 @@
               <av:PointCollection x:Key="ConnectorLocation">300,266.4 300,293.6</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Find appropriate document" sap:VirtualizedContainerService.HintSize="776,1072.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Find appropriate document" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Name="Files" />
-              <Variable x:TypeArguments="x:String" Default="D:\Student-exam-scheduler\ProgramareSesiune" Name="SourcePath" />
+              <Variable x:TypeArguments="x:String" Default="C:\Users\Stefanel\Desktop\projects\UiPath\Student-exam-scheduler\ProgramareSesiune" Name="SourcePath" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -242,19 +242,19 @@
                   <av:Size x:Key="ShapeSize">200,52.8</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Get exams data" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Get exams data" sap:VirtualizedContainerService.HintSize="436.8,1288" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[DocName]" sap:VirtualizedContainerService.HintSize="414.4,699.2" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[DocName]" sap:VirtualizedContainerService.HintSize="414.4,1163.2" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
                   <p:WordApplicationScope.Body>
                     <ActivityAction x:TypeArguments="ui:WordDocument">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336.8,589.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1053.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="DocText" />
                           <Variable x:TypeArguments="x:String" Name="text" />
@@ -265,8 +265,8 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <p:WordReadText DisplayName="Read Text" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="WordReadText_1" Text="[DocText]" />
-                        <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="" Code="Dim index As Integer = DocText.IndexOf(StudentGrupa)&#xA;text = DocText.Remove(0, index + 3)&#xA;&#xA;Dim grupa As Integer = Convert.ToInt32(StudentGrupa) + 1&#xA;Dim grupaString As String = &quot;GRUPA &quot; + Convert.ToString(grupa)&#xA;Dim index2 As Integer = text.IndexOf(grupaString)&#xA;&#xA;text = text.Remove(index2, text.Length - index2)&#xA;&#xA;Dim crt As Integer = text.IndexOf(&quot;1&quot;)&#xA;text = text.Remove(0, crt)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="314.4,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+                        <p:WordReadText DisplayName="Read Text" sap:VirtualizedContainerService.HintSize="352.8,60" sap2010:WorkflowViewState.IdRef="WordReadText_1" Text="[DocText]" />
+                        <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="" Code="Dim index As Integer = DocText.IndexOf(StudentGrupa)&#xD;&#xA;text = DocText.Remove(0, index + 3)&#xD;&#xA;&#xD;&#xA;Dim grupa As Integer = Convert.ToInt32(StudentGrupa) + 1&#xD;&#xA;Dim grupaString As String = &quot;GRUPA &quot; + Convert.ToString(grupa)&#xD;&#xA;Dim index2 As Integer = text.IndexOf(grupaString)&#xD;&#xA;&#xD;&#xA;text = text.Remove(index2, text.Length - index2)&#xD;&#xA;&#xD;&#xA;Dim crt As Integer = text.IndexOf(&quot;1&quot;)&#xD;&#xA;text = text.Remove(0, crt)&#xD;&#xA;&#xD;&#xA;Dim cleanedString As String = New system.Text.RegularExpressions.Regex(&quot;\u0007&quot;).Replace(text, &quot;&quot;)&#xD;&#xA;text = cleanedString" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="352.8,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
                           <ui:InvokeCode.Arguments>
                             <InArgument x:TypeArguments="x:String" x:Key="DocText">[DocText]</InArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="StudentGrupa">[StudentGrupa]</InArgument>
@@ -278,7 +278,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeCode>
-                        <Assign sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                        <Assign sap:VirtualizedContainerService.HintSize="352.8,60" sap2010:WorkflowViewState.IdRef="Assign_16">
                           <Assign.To>
                             <OutArgument x:TypeArguments="s:String[]">[ArrayFain]</OutArgument>
                           </Assign.To>
@@ -286,7 +286,28 @@
                             <InArgument x:TypeArguments="s:String[]">[text.Split(Environment.Newline.ToCharArray)]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[text]" TopMost="True" />
+                        <ui:InvokeCode ContinueOnError="{x:Null}" Code="ArrayFain = ArrayFain.Where(Function(x) Not String.IsNullOrWhiteSpace(x)).ToArray()" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="352.8,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+                          <ui:InvokeCode.Arguments>
+                            <InOutArgument x:TypeArguments="s:String[]" x:Key="ArrayFain">[ArrayFain]</InOutArgument>
+                          </ui:InvokeCode.Arguments>
+                        </ui:InvokeCode>
+                        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="352.8,319.2" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[ArrayFain]">
+                          <ui:ForEach.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="336.8,184.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="314.4,60" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[item]" TopMost="True" />
+                              </Sequence>
+                            </ActivityAction>
+                          </ui:ForEach.Body>
+                        </ui:ForEach>
                       </Sequence>
                     </ActivityAction>
                   </p:WordApplicationScope.Body>
