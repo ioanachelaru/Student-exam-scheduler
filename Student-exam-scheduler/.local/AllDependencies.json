@@ -1249,15 +1249,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stefanel\\.nuget\\packages\\": {}
+    "C:\\Users\\ioana\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Student-exam-scheduler",
       "projectName": "Student-exam-scheduler",
-      "projectPath": "C:\\Users\\Stefanel\\Desktop\\projects\\UiPath\\Student-exam-scheduler\\Student-exam-scheduler\\.local",
-      "packagesPath": "C:\\Users\\Stefanel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefanel\\Desktop\\projects\\UiPath\\Student-exam-scheduler\\Student-exam-scheduler\\.local"
+      "projectPath": "D:\\Student-exam-scheduler\\Student-exam-scheduler\\.local",
+      "packagesPath": "C:\\Users\\ioana\\.nuget\\packages\\",
+      "outputPath": "D:\\Student-exam-scheduler\\Student-exam-scheduler\\.local"
     },
     "frameworks": {
       "net461": {
@@ -1295,14 +1295,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Office.Interop.Word 15.0.4797.1003' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Office.Interop.Word"
-    }
-  ]
+  }
 }
