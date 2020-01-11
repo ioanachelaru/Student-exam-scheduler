@@ -31,23 +31,6 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Mail.Activities",
-        "Version": "1.4.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\Stefanel\\.nuget\\packages\\bouncycastle/1.8.1\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.4.1\\lib/net452/MailKit.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.4.1\\lib/net452/MimeKit.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.4.1\\lib/net452/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.4.1\\lib/net452/UiPath.Mail.Activities.dll",
-        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.4.1\\lib/net452/UiPath.Mail.dll"
-      ]
-    },
-    {
-      "Package": {
         "Id": "UiPath.System.Activities",
         "Version": "19.4.1"
       },
@@ -130,6 +113,49 @@
         "Version": "4.3.1"
       },
       "Assemblies": []
+    },
+    {
+      "Package": {
+        "Id": "UiPath.GSuite.Activities",
+        "Version": "1.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Stefanel\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis/1.40.2\\lib/net45/Google.Apis.PlatformServices.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis/1.40.2\\lib/net45/Google.Apis.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.auth/1.40.2\\lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.auth/1.40.2\\lib/net45/Google.Apis.Auth.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.calendar.v3/1.40.2.1611\\lib/net45/Google.Apis.Calendar.v3.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.core/1.40.2\\lib/net45/Google.Apis.Core.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.docs.v1/1.40.2.1615\\lib/net45/Google.Apis.Docs.v1.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.drive.v3/1.40.2.1610\\lib/net45/Google.Apis.Drive.v3.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.gmail.v1/1.40.2.1613\\lib/net45/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\google.apis.sheets.v4/1.40.2.1614\\lib/net45/Google.Apis.Sheets.v4.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\mimekit/2.2.0\\lib/net45/MimeKit.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\nodatime/2.4.6\\lib/net45/NodaTime.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.gsuite.activities/1.3.1\\lib/net461/UiPath.GSuite.Activities.Design.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.gsuite.activities/1.3.1\\lib/net461/UiPath.GSuite.Activities.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.gsuite.activities/1.3.1\\lib/net461/UiPath.GSuite.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.7.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\Stefanel\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/MailKit.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/MimeKit.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.Activities.dll",
+        "C:\\Users\\Stefanel\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.dll"
+      ]
     }
   ],
   "Conflicts": [],
@@ -141,7 +167,7 @@
     },
     "BouncyCastle": {
       "Id": "BouncyCastle",
-      "Version": "1.8.1",
+      "Version": "1.8.5",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -173,6 +199,114 @@
       "Id": "Extended.Wpf.Toolkit",
       "Version": "2.8.0",
       "Dependencies": []
+    },
+    "Google.Apis": {
+      "Id": "Google.Apis",
+      "Version": "1.40.2",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Auth": {
+      "Id": "Google.Apis.Auth",
+      "Version": "1.40.2",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Calendar.v3": {
+      "Id": "Google.Apis.Calendar.v3",
+      "Version": "1.40.2.1611",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.40.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Core": {
+      "Id": "Google.Apis.Core",
+      "Version": "1.40.2",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Docs.v1": {
+      "Id": "Google.Apis.Docs.v1",
+      "Version": "1.40.2.1615",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.40.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Drive.v3": {
+      "Id": "Google.Apis.Drive.v3",
+      "Version": "1.40.2.1610",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.40.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Gmail.v1": {
+      "Id": "Google.Apis.Gmail.v1",
+      "Version": "1.40.2.1613",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.40.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Sheets.v4": {
+      "Id": "Google.Apis.Sheets.v4",
+      "Version": "1.40.2.1614",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.40.2, )"
+        }
+      ]
     },
     "Humanizer.Core": {
       "Id": "Humanizer.Core",
@@ -219,9 +353,24 @@
       "Version": "7.10.6071",
       "Dependencies": []
     },
+    "MimeKit": {
+      "Id": "MimeKit",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.5, )"
+        }
+      ]
+    },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
       "Version": "11.0.2",
+      "Dependencies": []
+    },
+    "NodaTime": {
+      "Id": "NodaTime",
+      "Version": "2.4.6",
       "Dependencies": []
     },
     "NPOI": {
@@ -242,6 +391,11 @@
     "System.Text.RegularExpressions": {
       "Id": "System.Text.RegularExpressions",
       "Version": "4.3.1",
+      "Dependencies": []
+    },
+    "System.ValueTuple": {
+      "Id": "System.ValueTuple",
+      "Version": "4.5.0",
       "Dependencies": []
     },
     "UiPath": {
@@ -279,17 +433,75 @@
         }
       ]
     },
+    "UiPath.GSuite.Activities": {
+      "Id": "UiPath.GSuite.Activities",
+      "Version": "1.3.1",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Calendar.v3",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Docs.v1",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Drive.v3",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Gmail.v1",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "Google.Apis.Sheets.v4",
+          "Item2": "[1.40.2, )"
+        },
+        {
+          "Item1": "MimeKit",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.5, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        },
+        {
+          "Item1": "NodaTime",
+          "Item2": "[2.4.6, )"
+        }
+      ]
+    },
     "UiPath.Mail.Activities": {
       "Id": "UiPath.Mail.Activities",
-      "Version": "1.4.1",
+      "Version": "1.7.2",
       "Dependencies": [
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
         {
           "Item1": "Microsoft.Exchange.WebServices",
           "Item2": "[2.2.0, )"
         },
         {
           "Item1": "BouncyCastle",
-          "Item2": "[1.8.1, )"
+          "Item2": "[1.8.5, )"
         },
         {
           "Item1": "interop.domino.dll",

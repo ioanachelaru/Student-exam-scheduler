@@ -11,7 +11,7 @@
           "lib/Net40/ICSharpCode.AvalonEdit.dll": {}
         }
       },
-      "BouncyCastle/1.8.1": {
+      "BouncyCastle/1.8.5": {
         "type": "package",
         "compile": {
           "lib/_._": {}
@@ -112,6 +112,120 @@
           }
         }
       },
+      "Google.Apis/1.40.2": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.40.2",
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.PlatformServices.dll": {},
+          "lib/net45/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.40.2": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Core": "1.40.2"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/net45/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Calendar.v3/1.40.2.1611": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Auth": "1.40.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Calendar.v3.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.40.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.2"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Core.dll": {}
+        }
+      },
+      "Google.Apis.Docs.v1/1.40.2.1615": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Auth": "1.40.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Docs.v1.dll": {}
+        }
+      },
+      "Google.Apis.Drive.v3/1.40.2.1610": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Auth": "1.40.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Drive.v3.dll": {}
+        }
+      },
+      "Google.Apis.Gmail.v1/1.40.2.1613": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Auth": "1.40.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Gmail.v1.dll": {}
+        }
+      },
+      "Google.Apis.Sheets.v4/1.40.2.1614": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Auth": "1.40.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Sheets.v4.dll": {}
+        }
+      },
       "Humanizer.Core/2.4.2": {
         "type": "package",
         "compile": {
@@ -186,6 +300,25 @@
           "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
         }
       },
+      "MimeKit/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.5"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Net.Http",
+          "System.Security"
+        ],
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/MimeKit.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
@@ -193,6 +326,21 @@
         },
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NodaTime/2.4.6": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Numerics",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/NodaTime.dll": {}
         }
       },
       "NPOI/2.4.1": {
@@ -229,6 +377,19 @@
         },
         "runtime": {
           "lib/net45/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
         }
       },
       "UiPath/19.4.7068.19937": {
@@ -300,58 +461,248 @@
           }
         }
       },
-      "UiPath.Mail.Activities/1.4.1": {
+      "UiPath.GSuite.Activities/1.3.1": {
         "type": "package",
         "dependencies": {
-          "BouncyCastle": "1.8.1",
+          "BouncyCastle": "1.8.5",
+          "Google.Apis": "1.40.2",
+          "Google.Apis.Auth": "1.40.2",
+          "Google.Apis.Calendar.v3": "1.40.2",
+          "Google.Apis.Core": "1.40.2",
+          "Google.Apis.Docs.v1": "1.40.2",
+          "Google.Apis.Drive.v3": "1.40.2",
+          "Google.Apis.Gmail.v1": "1.40.2",
+          "Google.Apis.Sheets.v4": "1.40.2",
+          "MimeKit": "2.2.0",
+          "Newtonsoft.Json": "10.0.3",
+          "NodaTime": "2.4.6"
+        },
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/UiPath.GSuite.Activities.Design.dll": {},
+          "lib/net461/UiPath.GSuite.Activities.dll": {},
+          "lib/net461/UiPath.GSuite.dll": {}
+        },
+        "resource": {
+          "lib/net461/de/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.GSuite.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/es-MX/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.GSuite.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.GSuite.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/fr/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/fr/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/fr/UiPath.GSuite.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/ja/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ja/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ja/UiPath.GSuite.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ko/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.GSuite.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/pt-BR/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.GSuite.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.GSuite.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/ru/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/ru/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/ru/UiPath.GSuite.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/tr/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.GSuite.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/zh-CN/UiPath.GSuite.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net461/zh-CN/UiPath.GSuite.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net461/zh-CN/UiPath.GSuite.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
+      "UiPath.Mail.Activities/1.7.2": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.5",
           "Microsoft.Exchange.WebServices": "2.2.0",
+          "System.ValueTuple": "4.5.0",
           "interop.domino.dll": "1.0.0"
         },
         "compile": {
-          "lib/net452/_._": {}
+          "lib/net461/_._": {}
         },
         "runtime": {
-          "lib/net452/MailKit.dll": {},
-          "lib/net452/MimeKit.dll": {},
-          "lib/net452/UiPath.Mail.Activities.Design.dll": {},
-          "lib/net452/UiPath.Mail.Activities.dll": {},
-          "lib/net452/UiPath.Mail.dll": {}
+          "lib/net461/MailKit.dll": {},
+          "lib/net461/MimeKit.dll": {},
+          "lib/net461/UiPath.Mail.Activities.Design.dll": {},
+          "lib/net461/UiPath.Mail.Activities.dll": {},
+          "lib/net461/UiPath.Mail.dll": {}
         },
         "resource": {
-          "lib/net452/fr/UiPath.Mail.Activities.Design.resources.dll": {
+          "lib/net461/de/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.Mail.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.Mail.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/es-MX/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.Mail.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.Mail.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.Mail.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.Mail.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/fr/UiPath.Mail.Activities.Design.resources.dll": {
             "locale": "fr"
           },
-          "lib/net452/fr/UiPath.Mail.Activities.resources.dll": {
+          "lib/net461/fr/UiPath.Mail.Activities.resources.dll": {
             "locale": "fr"
           },
-          "lib/net452/fr/UiPath.Mail.resources.dll": {
+          "lib/net461/fr/UiPath.Mail.resources.dll": {
             "locale": "fr"
           },
-          "lib/net452/ja/UiPath.Mail.Activities.Design.resources.dll": {
+          "lib/net461/ja/UiPath.Mail.Activities.Design.resources.dll": {
             "locale": "ja"
           },
-          "lib/net452/ja/UiPath.Mail.Activities.resources.dll": {
+          "lib/net461/ja/UiPath.Mail.Activities.resources.dll": {
             "locale": "ja"
           },
-          "lib/net452/ja/UiPath.Mail.resources.dll": {
+          "lib/net461/ja/UiPath.Mail.resources.dll": {
             "locale": "ja"
           },
-          "lib/net452/ru/UiPath.Mail.Activities.Design.resources.dll": {
+          "lib/net461/ko/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.Mail.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.Mail.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/pt-BR/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.Mail.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.Mail.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.Mail.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.Mail.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/ru/UiPath.Mail.Activities.Design.resources.dll": {
             "locale": "ru"
           },
-          "lib/net452/ru/UiPath.Mail.Activities.resources.dll": {
+          "lib/net461/ru/UiPath.Mail.Activities.resources.dll": {
             "locale": "ru"
           },
-          "lib/net452/ru/UiPath.Mail.resources.dll": {
+          "lib/net461/ru/UiPath.Mail.resources.dll": {
             "locale": "ru"
           },
-          "lib/net452/zh-CN/UiPath.Mail.Activities.Design.resources.dll": {
+          "lib/net461/tr/UiPath.Mail.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.Mail.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.Mail.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/zh-CN/UiPath.Mail.Activities.Design.resources.dll": {
             "locale": "zh-CN"
           },
-          "lib/net452/zh-CN/UiPath.Mail.Activities.resources.dll": {
+          "lib/net461/zh-CN/UiPath.Mail.Activities.resources.dll": {
             "locale": "zh-CN"
           },
-          "lib/net452/zh-CN/UiPath.Mail.resources.dll": {
+          "lib/net461/zh-CN/UiPath.Mail.resources.dll": {
             "locale": "zh-CN"
           }
         }
@@ -619,15 +970,15 @@
         "lib/Net40/ICSharpCode.AvalonEdit.xml"
       ]
     },
-    "BouncyCastle/1.8.1": {
-      "sha512": "nH+P67LavO5EcxjKdBxFfRdfdFhivS3Xp3+0br1KcpCI8DM6ksCWy6YYZjk7XFV+VsHGtkUovwIZ/vmCp42geA==",
+    "BouncyCastle/1.8.5": {
+      "sha512": "196QWfvglefGd/Cr2C4hIdmA9HYkLFZovxJ7L0BAOFlNn+qlmVxqpxpcKGoC5AF4rOuoUq3ylzLgKZW5j4nmDQ==",
       "type": "package",
-      "path": "bouncycastle/1.8.1",
+      "path": "bouncycastle/1.8.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Readme.txt",
-        "bouncycastle.1.8.1.nupkg.sha512",
+        "README.md",
+        "bouncycastle.1.8.5.nupkg.sha512",
         "bouncycastle.nuspec",
         "lib/BouncyCastle.Crypto.dll"
       ]
@@ -725,6 +1076,208 @@
         "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
         "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
         "tools/install.ps1"
+      ]
+    },
+    "Google.Apis/1.40.2": {
+      "sha512": "cA0x/6oV3K2zpcK3OdqkCUB80QkuVUe9naAdlVcshelPSL9tJzKdBR11LMz4hAOpTc2vtqMm9rkQa4jgOfHRWw==",
+      "type": "package",
+      "path": "google.apis/1.40.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.1.40.2.nupkg.sha512",
+        "google.apis.nuspec",
+        "lib/net45/Google.Apis.PlatformServices.dll",
+        "lib/net45/Google.Apis.dll",
+        "lib/net45/Google.Apis.pdb",
+        "lib/net45/Google.Apis.xml",
+        "lib/netstandard1.3/Google.Apis.dll",
+        "lib/netstandard1.3/Google.Apis.pdb",
+        "lib/netstandard1.3/Google.Apis.xml",
+        "lib/netstandard2.0/Google.Apis.dll",
+        "lib/netstandard2.0/Google.Apis.pdb",
+        "lib/netstandard2.0/Google.Apis.xml"
+      ]
+    },
+    "Google.Apis.Auth/1.40.2": {
+      "sha512": "0YHiCwWF5DkKf7kpe89AjAB9FoJTu1qpPdkw3eUwfFc8ohuGQbxSVgyiieAtWhSvJ01iKH7zepdNR1PyrFPRvQ==",
+      "type": "package",
+      "path": "google.apis.auth/1.40.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.auth.1.40.2.nupkg.sha512",
+        "google.apis.auth.nuspec",
+        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "lib/net45/Google.Apis.Auth.dll",
+        "lib/net45/Google.Apis.Auth.pdb",
+        "lib/net45/Google.Apis.Auth.xml",
+        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.pdb",
+        "lib/netstandard1.3/Google.Apis.Auth.xml",
+        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.pdb",
+        "lib/netstandard2.0/Google.Apis.Auth.xml"
+      ]
+    },
+    "Google.Apis.Calendar.v3/1.40.2.1611": {
+      "sha512": "DFxfGsHd/9cGF2WQvcdoQuS5tUVhC/JH7DSeL2tcYmHbaGkGt2LWGc4cw9oOr81u0ErFbtEuEcgkoMLp1OIF7Q==",
+      "type": "package",
+      "path": "google.apis.calendar.v3/1.40.2.1611",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.calendar.v3.1.40.2.1611.nupkg.sha512",
+        "google.apis.calendar.v3.nuspec",
+        "lib/net40/Google.Apis.Calendar.v3.dll",
+        "lib/net40/Google.Apis.Calendar.v3.pdb",
+        "lib/net40/Google.Apis.Calendar.v3.xml",
+        "lib/net45/Google.Apis.Calendar.v3.dll",
+        "lib/net45/Google.Apis.Calendar.v3.pdb",
+        "lib/net45/Google.Apis.Calendar.v3.xml",
+        "lib/netstandard1.0/Google.Apis.Calendar.v3.dll",
+        "lib/netstandard1.0/Google.Apis.Calendar.v3.pdb",
+        "lib/netstandard1.0/Google.Apis.Calendar.v3.xml",
+        "lib/netstandard1.3/Google.Apis.Calendar.v3.dll",
+        "lib/netstandard1.3/Google.Apis.Calendar.v3.pdb",
+        "lib/netstandard1.3/Google.Apis.Calendar.v3.xml",
+        "lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
+        "lib/netstandard2.0/Google.Apis.Calendar.v3.pdb",
+        "lib/netstandard2.0/Google.Apis.Calendar.v3.xml"
+      ]
+    },
+    "Google.Apis.Core/1.40.2": {
+      "sha512": "eOI5/BdxfRgrI+3ZGVrogatR7VvHyKvcPCRNDi1KS/ptm0CTf4+zY8I/ryrMCIrKMoW9aQamMoNjbKFruRIv8A==",
+      "type": "package",
+      "path": "google.apis.core/1.40.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.core.1.40.2.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.Docs.v1/1.40.2.1615": {
+      "sha512": "vyD92dSRyRLrDnme5uUPbbRlfYGO9Ofya1TlEVrIy50WM7KkffZbpHPu/bs0Bjz6Bz7gIvxH+ZF+Rd9dZaAcqg==",
+      "type": "package",
+      "path": "google.apis.docs.v1/1.40.2.1615",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.docs.v1.1.40.2.1615.nupkg.sha512",
+        "google.apis.docs.v1.nuspec",
+        "lib/net40/Google.Apis.Docs.v1.dll",
+        "lib/net40/Google.Apis.Docs.v1.pdb",
+        "lib/net40/Google.Apis.Docs.v1.xml",
+        "lib/net45/Google.Apis.Docs.v1.dll",
+        "lib/net45/Google.Apis.Docs.v1.pdb",
+        "lib/net45/Google.Apis.Docs.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Docs.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Docs.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Docs.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Docs.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Docs.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Docs.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Docs.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Docs.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Docs.v1.xml"
+      ]
+    },
+    "Google.Apis.Drive.v3/1.40.2.1610": {
+      "sha512": "Oh3tglTYQDUuHgvXm44HdfGIiAlMTdF68t49adrs4DYVslictUhm36qo1AUt8+5rDnuSpGuNgq4qdvNzbsVnpw==",
+      "type": "package",
+      "path": "google.apis.drive.v3/1.40.2.1610",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.drive.v3.1.40.2.1610.nupkg.sha512",
+        "google.apis.drive.v3.nuspec",
+        "lib/net40/Google.Apis.Drive.v3.dll",
+        "lib/net40/Google.Apis.Drive.v3.pdb",
+        "lib/net40/Google.Apis.Drive.v3.xml",
+        "lib/net45/Google.Apis.Drive.v3.dll",
+        "lib/net45/Google.Apis.Drive.v3.pdb",
+        "lib/net45/Google.Apis.Drive.v3.xml",
+        "lib/netstandard1.0/Google.Apis.Drive.v3.dll",
+        "lib/netstandard1.0/Google.Apis.Drive.v3.pdb",
+        "lib/netstandard1.0/Google.Apis.Drive.v3.xml",
+        "lib/netstandard1.3/Google.Apis.Drive.v3.dll",
+        "lib/netstandard1.3/Google.Apis.Drive.v3.pdb",
+        "lib/netstandard1.3/Google.Apis.Drive.v3.xml",
+        "lib/netstandard2.0/Google.Apis.Drive.v3.dll",
+        "lib/netstandard2.0/Google.Apis.Drive.v3.pdb",
+        "lib/netstandard2.0/Google.Apis.Drive.v3.xml"
+      ]
+    },
+    "Google.Apis.Gmail.v1/1.40.2.1613": {
+      "sha512": "OchJJFq3qAvn3bMiel/abpImMSutWUP3bFEEC5kwYA6YpgHYdfy0M+XafBJVEUw/l6toI3564Kba8z7RZzGpug==",
+      "type": "package",
+      "path": "google.apis.gmail.v1/1.40.2.1613",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.gmail.v1.1.40.2.1613.nupkg.sha512",
+        "google.apis.gmail.v1.nuspec",
+        "lib/net40/Google.Apis.Gmail.v1.dll",
+        "lib/net40/Google.Apis.Gmail.v1.pdb",
+        "lib/net40/Google.Apis.Gmail.v1.xml",
+        "lib/net45/Google.Apis.Gmail.v1.dll",
+        "lib/net45/Google.Apis.Gmail.v1.pdb",
+        "lib/net45/Google.Apis.Gmail.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Gmail.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Gmail.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Gmail.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Gmail.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Gmail.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Gmail.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Gmail.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Gmail.v1.xml"
+      ]
+    },
+    "Google.Apis.Sheets.v4/1.40.2.1614": {
+      "sha512": "nwPbfrJRpWL4OT3rpbU8QvK/wcFwpyAUP1K96/BiqAxaMhcKmXs0JssaUFZWF+2QfVo1rtUDgBIYDeQ9PPDYEQ==",
+      "type": "package",
+      "path": "google.apis.sheets.v4/1.40.2.1614",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.sheets.v4.1.40.2.1614.nupkg.sha512",
+        "google.apis.sheets.v4.nuspec",
+        "lib/net40/Google.Apis.Sheets.v4.dll",
+        "lib/net40/Google.Apis.Sheets.v4.pdb",
+        "lib/net40/Google.Apis.Sheets.v4.xml",
+        "lib/net45/Google.Apis.Sheets.v4.dll",
+        "lib/net45/Google.Apis.Sheets.v4.pdb",
+        "lib/net45/Google.Apis.Sheets.v4.xml",
+        "lib/netstandard1.0/Google.Apis.Sheets.v4.dll",
+        "lib/netstandard1.0/Google.Apis.Sheets.v4.pdb",
+        "lib/netstandard1.0/Google.Apis.Sheets.v4.xml",
+        "lib/netstandard1.3/Google.Apis.Sheets.v4.dll",
+        "lib/netstandard1.3/Google.Apis.Sheets.v4.pdb",
+        "lib/netstandard1.3/Google.Apis.Sheets.v4.xml",
+        "lib/netstandard2.0/Google.Apis.Sheets.v4.dll",
+        "lib/netstandard2.0/Google.Apis.Sheets.v4.pdb",
+        "lib/netstandard2.0/Google.Apis.Sheets.v4.xml"
       ]
     },
     "Humanizer.Core/2.4.2": {
@@ -839,6 +1392,37 @@
         "microsoft.visualstudio.ole.interop.nuspec"
       ]
     },
+    "MimeKit/2.2.0": {
+      "sha512": "S7X9/8vlLHcDpvIJvqUxgM+dCkLuClTeGBUtargPLGqhNPk4F8VdWH1xzOTXD1OVYwB/HaJYy3Gg1jP20Ordcw==",
+      "type": "package",
+      "path": "mimekit/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid/BouncyCastle.dll",
+        "lib/monoandroid/MimeKit.dll",
+        "lib/monoandroid/MimeKit.xml",
+        "lib/net45/MimeKit.dll",
+        "lib/net45/MimeKit.xml",
+        "lib/netstandard1.3/MimeKit.dll",
+        "lib/netstandard1.3/MimeKit.xml",
+        "lib/netstandard1.6/MimeKit.dll",
+        "lib/netstandard1.6/MimeKit.xml",
+        "lib/netstandard2.0/MimeKit.dll",
+        "lib/netstandard2.0/MimeKit.xml",
+        "lib/portable-net45+win8+wpa81/MimeKit.dll",
+        "lib/portable-net45+win8+wpa81/MimeKit.xml",
+        "lib/portable-net45+win8+wpa81/Portable.Text.Encoding.dll",
+        "lib/portable-net45+win8/MimeKit.dll",
+        "lib/portable-net45+win8/MimeKit.xml",
+        "lib/portable-net45+win8/Portable.Text.Encoding.dll",
+        "lib/xamarinios/BouncyCastle.dll",
+        "lib/xamarinios/MimeKit.dll",
+        "lib/xamarinios/MimeKit.xml",
+        "mimekit.2.2.0.nupkg.sha512",
+        "mimekit.nuspec"
+      ]
+    },
     "Newtonsoft.Json/11.0.2": {
       "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
@@ -867,6 +1451,26 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "NodaTime/2.4.6": {
+      "sha512": "eUqcuV4KY+8w0npHFcfaPn8IrL4TpqVgbHKteXu7/CSeWPtJj5knwIfGoDnEWYONuddCF25Pq2p+PqUtfRXmYg==",
+      "type": "package",
+      "path": "nodatime/2.4.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NodaTime.dll",
+        "lib/net45/NodaTime.pdb",
+        "lib/net45/NodaTime.xml",
+        "lib/netstandard1.3/NodaTime.dll",
+        "lib/netstandard1.3/NodaTime.pdb",
+        "lib/netstandard1.3/NodaTime.xml",
+        "lib/netstandard2.0/NodaTime.dll",
+        "lib/netstandard2.0/NodaTime.pdb",
+        "lib/netstandard2.0/NodaTime.xml",
+        "nodatime.2.4.6.nupkg.sha512",
+        "nodatime.nuspec"
       ]
     },
     "NPOI/2.4.1": {
@@ -1002,6 +1606,50 @@
         "system.text.regularexpressions.nuspec"
       ]
     },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "UiPath/19.4.7068.19937": {
       "sha512": "QgaJScTblB1EXGZASh2PHVXX/PDfXzflpBx+ZU2AKnG/UkocX5t+2YWrzXJCBO+Q5FVsagGTjnMOTKZs+0KD4g==",
       "type": "package",
@@ -1081,33 +1729,100 @@
         "uipath.excel.activities.nuspec"
       ]
     },
-    "UiPath.Mail.Activities/1.4.1": {
-      "sha512": "yYAOlgfdApJKLZ5LBK6lmqFoy6cQI+r295rrUwDDXD41GQvRI+/hVI3W+skZ8op4LVUTyhJWklpmBKmnwccq8Q==",
+    "UiPath.GSuite.Activities/1.3.1": {
+      "sha512": "mZ68IR15UOfaaMfefIQbMFu/9Veq61Mn6jNUjHJi3yM2w5lCgRLW3MPLN6odUpGVtYnfmlW2fSHOgUy/mszZcg==",
       "type": "package",
-      "path": "uipath.mail.activities/1.4.1",
+      "path": "uipath.gsuite.activities/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net461/UiPath.GSuite.Activities.Design.dll",
+        "lib/net461/UiPath.GSuite.Activities.dll",
+        "lib/net461/UiPath.GSuite.dll",
+        "lib/net461/de/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/de/UiPath.GSuite.resources.dll",
+        "lib/net461/es-MX/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.GSuite.resources.dll",
+        "lib/net461/es/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/es/UiPath.GSuite.resources.dll",
+        "lib/net461/fr/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/fr/UiPath.GSuite.resources.dll",
+        "lib/net461/ja/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/ja/UiPath.GSuite.resources.dll",
+        "lib/net461/ko/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/ko/UiPath.GSuite.resources.dll",
+        "lib/net461/pt-BR/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.GSuite.resources.dll",
+        "lib/net461/pt/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/pt/UiPath.GSuite.resources.dll",
+        "lib/net461/ru/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/ru/UiPath.GSuite.resources.dll",
+        "lib/net461/tr/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/tr/UiPath.GSuite.resources.dll",
+        "lib/net461/zh-CN/UiPath.GSuite.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.GSuite.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.GSuite.resources.dll",
+        "uipath.gsuite.activities.1.3.1.nupkg.sha512",
+        "uipath.gsuite.activities.nuspec"
+      ]
+    },
+    "UiPath.Mail.Activities/1.7.2": {
+      "sha512": "nmbFqLG4rHXAx/AKzXn55maa6ELzLNZTRXiV2kgHIP0fATtZd03yhyFp9qKziLjfRAOufxaZl4v3/WI8GHj6jg==",
+      "type": "package",
+      "path": "uipath.mail.activities/1.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net452/MailKit.dll",
-        "lib/net452/MailKit.xml",
-        "lib/net452/MimeKit.dll",
-        "lib/net452/MimeKit.xml",
-        "lib/net452/UiPath.Mail.Activities.Design.dll",
-        "lib/net452/UiPath.Mail.Activities.dll",
-        "lib/net452/UiPath.Mail.dll",
-        "lib/net452/fr/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/fr/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/fr/UiPath.Mail.resources.dll",
-        "lib/net452/ja/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/ja/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/ja/UiPath.Mail.resources.dll",
-        "lib/net452/ru/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/ru/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/ru/UiPath.Mail.resources.dll",
-        "lib/net452/zh-CN/UiPath.Mail.Activities.Design.resources.dll",
-        "lib/net452/zh-CN/UiPath.Mail.Activities.resources.dll",
-        "lib/net452/zh-CN/UiPath.Mail.resources.dll",
-        "uipath.mail.activities.1.4.1.nupkg.sha512",
+        "lib/net461/MailKit.dll",
+        "lib/net461/MailKit.xml",
+        "lib/net461/MimeKit.dll",
+        "lib/net461/MimeKit.xml",
+        "lib/net461/UiPath.Mail.Activities.Design.dll",
+        "lib/net461/UiPath.Mail.Activities.dll",
+        "lib/net461/UiPath.Mail.dll",
+        "lib/net461/de/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/de/UiPath.Mail.resources.dll",
+        "lib/net461/es-MX/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.Mail.resources.dll",
+        "lib/net461/es/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/es/UiPath.Mail.resources.dll",
+        "lib/net461/fr/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/fr/UiPath.Mail.resources.dll",
+        "lib/net461/ja/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/ja/UiPath.Mail.resources.dll",
+        "lib/net461/ko/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/ko/UiPath.Mail.resources.dll",
+        "lib/net461/pt-BR/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.Mail.resources.dll",
+        "lib/net461/pt/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/pt/UiPath.Mail.resources.dll",
+        "lib/net461/ru/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/ru/UiPath.Mail.resources.dll",
+        "lib/net461/tr/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/tr/UiPath.Mail.resources.dll",
+        "lib/net461/zh-CN/UiPath.Mail.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.Mail.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.Mail.resources.dll",
+        "uipath.mail.activities.1.7.2.nupkg.sha512",
         "uipath.mail.activities.nuspec"
       ]
     },
@@ -1339,7 +2054,8 @@
       "Microsoft.Office.Interop.Word >= 15.0.4797.1003 <= 15.0.4797.1003",
       "System.Text.RegularExpressions >= 4.3.1 <= 4.3.1",
       "UiPath.Excel.Activities >= 2.5.4 <= 2.5.4",
-      "UiPath.Mail.Activities >= 1.4.1 <= 1.4.1",
+      "UiPath.GSuite.Activities >= 1.3.1 <= 1.3.1",
+      "UiPath.Mail.Activities >= 1.7.2 <= 1.7.2",
       "UiPath.System.Activities >= 19.4.1 <= 19.4.1",
       "UiPath.UIAutomation.Activities >= 19.4.2 <= 19.4.2",
       "UiPath.Word.Activities >= 1.3.4 <= 1.3.4"
@@ -1374,10 +2090,15 @@
             "target": "Package",
             "version": "[2.5.4, 2.5.4]"
           },
+          "UiPath.GSuite.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.3.1, 1.3.1]"
+          },
           "UiPath.Mail.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.4.1, 1.4.1]"
+            "version": "[1.7.2, 1.7.2]"
           },
           "UiPath.System.Activities": {
             "include": "Runtime",
@@ -1400,11 +2121,54 @@
   },
   "logs": [
     {
-      "code": "NU3034",
+      "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'System.Text.RegularExpressions 4.3.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Text.RegularExpressions"
+      "message": "UiPath.GSuite.Activities 1.3.1 depends on Google.Apis.Calendar.v3 (>= 1.40.2) but Google.Apis.Calendar.v3 1.40.2 was not found. An approximate best match of Google.Apis.Calendar.v3 1.40.2.1611 was resolved.",
+      "libraryId": "Google.Apis.Calendar.v3",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "UiPath.GSuite.Activities 1.3.1 depends on Google.Apis.Docs.v1 (>= 1.40.2) but Google.Apis.Docs.v1 1.40.2 was not found. An approximate best match of Google.Apis.Docs.v1 1.40.2.1615 was resolved.",
+      "libraryId": "Google.Apis.Docs.v1",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "UiPath.GSuite.Activities 1.3.1 depends on Google.Apis.Drive.v3 (>= 1.40.2) but Google.Apis.Drive.v3 1.40.2 was not found. An approximate best match of Google.Apis.Drive.v3 1.40.2.1610 was resolved.",
+      "libraryId": "Google.Apis.Drive.v3",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "UiPath.GSuite.Activities 1.3.1 depends on Google.Apis.Gmail.v1 (>= 1.40.2) but Google.Apis.Gmail.v1 1.40.2 was not found. An approximate best match of Google.Apis.Gmail.v1 1.40.2.1613 was resolved.",
+      "libraryId": "Google.Apis.Gmail.v1",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "UiPath.GSuite.Activities 1.3.1 depends on Google.Apis.Sheets.v4 (>= 1.40.2) but Google.Apis.Sheets.v4 1.40.2 was not found. An approximate best match of Google.Apis.Sheets.v4 1.40.2.1614 was resolved.",
+      "libraryId": "Google.Apis.Sheets.v4",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.1"
+      ]
     }
   ]
 }
