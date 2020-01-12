@@ -2062,15 +2062,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stefanel\\.nuget\\packages\\": {}
+    "C:\\Users\\ioana\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Student-exam-scheduler",
       "projectName": "Student-exam-scheduler",
-      "projectPath": "C:\\Users\\Stefanel\\Desktop\\projects\\UiPath\\Student-exam-scheduler\\Student-exam-scheduler\\.local",
-      "packagesPath": "C:\\Users\\Stefanel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefanel\\Desktop\\projects\\UiPath\\Student-exam-scheduler\\Student-exam-scheduler\\.local"
+      "projectPath": "D:\\Student-exam-scheduler\\Student-exam-scheduler\\.local",
+      "packagesPath": "C:\\Users\\ioana\\.nuget\\packages\\",
+      "outputPath": "D:\\Student-exam-scheduler\\Student-exam-scheduler\\.local"
     },
     "frameworks": {
       "net461": {
@@ -2120,6 +2120,90 @@
     }
   },
   "logs": [
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Calendar.v3 1.40.2.1611' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Calendar.v3"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis 1.40.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Docs.v1 1.40.2.1615' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Docs.v1"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Gmail.v1 1.40.2.1613' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Gmail.v1"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Auth 1.40.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Auth"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MimeKit 2.2.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "MimeKit"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'BouncyCastle 1.8.5' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
+      "libraryId": "BouncyCastle"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Sheets.v4 1.40.2.1614' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Sheets.v4"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NodaTime 2.4.6' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "NodaTime"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Drive.v3 1.40.2.1610' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Drive.v3"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Google.Apis.Core 1.40.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "Google.Apis.Core"
+    },
+    {
+      "code": "NU3034",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.RegularExpressions 4.3.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
+      "libraryId": "System.Text.RegularExpressions"
+    },
     {
       "code": "NU1603",
       "level": "Warning",
